@@ -15,7 +15,7 @@
     "README.md"
   ],
   "scripts": {
-    "build": "tsc",
+    "build": "node init && tsc",
     "prepare": "npm run build",
     "postbuild": "copyfiles index.d.ts dist/",
     "test": "vitest run",
@@ -29,6 +29,7 @@
     "@stellar/stellar-sdk": "^13.3.0",
     "big.js": "^7.0.1",
     "dotenv": "^16.4.7",
+    "node-fetch": "^3.3.2",
     "stellar-sdk": "^13.3.0",
     "typescript": "^5.8.3",
     "zod": "^4.3.6"
